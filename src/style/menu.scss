@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 
   nav {
     ul {
@@ -29,12 +30,18 @@ header {
             transform: translateX(-50%);
             width: 0;
             height: 2px;
-            background-color: white;
+            background: linear-gradient(90deg, rgba(185, 54, 245, 1), rgba(198, 76, 133, 1), rgba(241, 0, 91, 1));
             transition: width 0.3s ease;
           }
 
           &:hover::after {
             width: 50%;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, rgba(185, 54, 245, 1), rgba(198, 76, 133, 1), rgba(241, 0, 91, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
       }
