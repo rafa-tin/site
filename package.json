@@ -1,0 +1,20 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/style/style.scss:src/dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:scss": "stylelint src/style/*.scss"
+  },
+  "private": true,
+  "dependencies": {
+    "sass": "^1.87.0"
+  },
+  "devDependencies": {
+    "stylelint": "^16.19.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.1"
+  }
+}

@@ -1,0 +1,22 @@
+.circle {
+  position: absolute;
+  width: 100%;
+  pointer-events: none; // Чтобы клики проходили "сквозь" круги
+  background: radial-gradient(circle, rgb(170 20 240 / 80%), transparent);
+  border-radius: 50%;
+  z-index: -1;
+
+  // animation: move 20s linear infinite;
+}
+
+// @keyframes move {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   50% {
+//     transform: translate(200px, 200px);
+//   }
+//   100% {
+//     transform: translate(0, 0);
+//   }
+// }
