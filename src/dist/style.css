@@ -5,6 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 header nav ul {
   display: grid;
@@ -31,11 +32,16 @@ header nav ul li a::after {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: white;
+  background: linear-gradient(90deg, rgb(185, 54, 245), rgb(198, 76, 133), rgb(241, 0, 91));
   transition: width 0.3s ease;
 }
 header nav ul li a:hover::after {
   width: 50%;
+}
+header nav ul li a:hover {
+  background: linear-gradient(90deg, rgb(185, 54, 245), rgb(198, 76, 133), rgb(241, 0, 91));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header nav ul li:nth-child(4) {
   margin: auto;
